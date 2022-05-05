@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>taoform2</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: aqua;
+            text-align: left;
+        }
+        table {
+width: 100%;
+            background-color: bisque;
+        }
+        #d10 {
+            text-align:center;
+            padding: 5px;}
+            th {
+                color: blue;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr id="d1">
+            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        </tr>
+        <tr id="d2">
+            <th>Họ và tên</th>
+            <td><input type="text"></td>
+            <td></td>
+        </tr>
+        <tr id="d3">
+            <th>Ngày sinh</th>
+            <td><input type="text"></td>
+            <td></td>
+        </tr>
+        <tr id="d4">
+            <th>Giới tính</th>
+            <td><input type="radio" name="a1">Nam <input type="radio" name="a1">Nữ</td>
+
+        </tr>
+        <tr id="d5">
+            <th>Địa chỉ</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr id="d6">
+            <th>Lớp</th>
+            <td><select name="lớp" id="d7" >
+                <option value="Lớp 1">Lớp 1</option>
+                <option value="Lớp 2">lớp 2</option>
+                <option value="Lớp 3">lớp 3</option>
+            </select></td>
+        </tr>
+        <tr id="d8">
+            <th>Email</th>
+            <td><input type="email" placeholder="viết email của mình vào"> </td>
+        </tr>
+
+        <tr i="d9">
+            <th>Điện thoại</th>
+            <td><input type="phone"></td>
+        </tr>
+        <tr id="d10"> <td><input type="submit" name="d10" value="Đăng ký"> <input type="reset" name="d10" value="nhập lại">
+        </td>
+
+        </tr>
+    </table>
+</form>
+</body>
+</html>
