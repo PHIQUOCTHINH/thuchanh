@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<!--<p><input type="text" placeholder="Nhập số a" id = "s1"></p>-->
+<!--<p><input type="text" placeholder="Nhập số b" id = "s2"></p>-->
+<!--<button onclick="tinhToan()">Tính</button>-->
+
+<!--<h1 id="Result">Result</h1>-->
+<input type="text" id="s3">Nhap a
+<input type="text" id="s4">Nhap b
+<button onclick="bai4()">Click</button>
+<p id="hienThi">hienThi</p>
+</body>
+<script>
+    function bai4() {
+        let a = parseInt(document.getElementById("s3").value)
+        // let b = parseInt(document.getElementById(s4).value)
+        chuVi = a*4
+        dienTich = a*a
+        document.getElementById("hienThi").innerText = "Chu vi la"+ chuVi + " Dien tich la"+ dienTich ;
+    }
+    // câu 1 : câu lệnh hiện thị 1 hộp thoại.
+    // let a = prompt("nhap so vao ")
+    // Nêu cú pháp hiển thị tên bạn lên hộp thoại
+    // let hoten = prompt("nhap ten")
+    // alert(hoten)
+// Câu 2 Câu lệnh nào để nhận giá trị từ 1 hộp thoại
+// Viết code nhận giá trị từ họp thoại, hiển thị bình phương của số đó ra hộp thoại
+// let a = parseInt(prompt("Nhap gia tri"))
+//     let binhpPhuong = (a *a)
+//     alert(binhpPhuong)
+    // Câu 3 : Viết các bước để code nhận a và b từ 2 ô input
+    // và hiển thị  S= a*b ra thẻ h1
+
+    // function tinhToan (){
+    //     let a = parseInt(document.getElementById('s1').value)
+    //     let b = parseInt(document.getElementById('s2').value)
+    //
+    //     Result = a * b
+    //     document.getElementById("Result").innerHTML = Result;
+    // }
+    // Câu 4 :
+</script>
+</html>
