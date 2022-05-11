@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weiht = parseInt(prompt("nhập vao cân nặng"))
+    let height = parseInt(prompt(" nhập vào chiều cao"))
+    // let bmi = weiht / (Math.pow(height,2))
+    let bmi = weiht / (height^2)
+  alert(bmi)
+    let a = (bmi < 18)?"Underweight" : (bmi<25)? "Nomal":(bmi< 30)?"Overweight":"Obese"
+    switch (a){
+        case a:
+            alert(a)
+    }
+</script>
+</body>
+</html>

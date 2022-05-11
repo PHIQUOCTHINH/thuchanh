@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input  type="number" id="thang">
+<button onclick="day()" id ="day" >Tính số ngày</button>
+<p id="hienThi">Result</p>
+</body>
+<script>
+
+    function day(){
+      let  thang = parseInt(document.getElementById("thang").value)
+let a = parseInt(thang)
+        switch (a) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("hienThi").innerText = "Tháng có 31 ngày" + a
+                break;
+            case 4 :
+            case 6:
+            case 9 :
+            case 11 :
+                document.getElementById("hienThi").innerText = "Tháng có 30 ngày" + a
+                break;
+            case 2:
+                document.getElementById("hienThi").innerText = "Tháng có 28,29 ngày" + a
+        }
+    }
+</script>
+</html>
