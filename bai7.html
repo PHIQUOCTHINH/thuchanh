@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập a")
+    let b = prompt("Nhập b")
+    let c = prompt("Nhập c")
+    if (a!=0) {
+        if(b==0){
+            if(c ==0){
+                alert("Phương trình vô số nghiệm")
+            } else {
+                alert("PHương trình vô nghiệm")
+            }
+        } else {
+            x= -c/b
+            alert("NGhiệm pt x = " + x)
+        }
+    } else {
+        dt = b*b-4*a*c
+        if (dt<0) {
+            alert("PT vô nghiệm")
+        } else if (dt ==0) {
+            x= -b/(2*a)
+            alert("Phương trình có nghiệm kép= "+x)
+        }else {
+            x1 = (-b +Math.sqrt(dt))/(2*a)
+            x2 = (-b - Math.sqrt(dt))/(2*a)
+            document.write("x1"+x1+"x2"+x2)
+        }
+    }
+</script>
+</body>
+</html>
